@@ -9,6 +9,12 @@ class Game
 
   def play(choice)
     selection = choice - 1
-    @board[selection] = "O"
+    @player1 == true ? @board[selection] = "O" : @board[selection] = "X"
+    change_player
   end
+
+  def change_player
+    @player1 = !@player1
+  end
+
 end
