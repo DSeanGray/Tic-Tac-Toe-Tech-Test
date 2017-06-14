@@ -1,3 +1,5 @@
+require_relative "./board.rb"
+
 class Game
 
   attr_reader :player1, :board, :possible_wins

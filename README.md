@@ -1,6 +1,30 @@
 # Tic Tac Toe Tech Test
 
-### The brief
+To download and play:
+
+Open your terminal window and `cd` to the directory of your choice and run the following commands.
+
+* `git clone git@github.com:DSeanGray/Tic-Tac-Toe-Tech-Test.git`
+* `cd Tic-Tac-Toe-Tech-Test`
+* `irb`
+* `require "./lib/game.rb"`
+* `game = Game.new`
+
+Tic-Tac-Toe has been set up!
+
+Player 1 is "O"s and Player 2 is "X"s.
+
+To place your X or O simply choose the number corresponding to the grid below.
+
+  1 | 2 | 3<br>
+  4 | 5 | 6<br>
+  7 | 8 | 8
+
+To play in the terminal window type `game.play(`number`)`.
+
+To view the board, type `game.board`.
+
+### The Brief
 
 The rules of tic-tac-toe are as follows:
 
@@ -15,32 +39,32 @@ The rules of tic-tac-toe are as follows:
 Build the business logic for a game of tic tac toe. It should be easy to implement a working game of tic tac toe by combining your code with any user interface, whether web or command line.
 
 ```
-as a player,
+As a player,
 so that i can play a game of tic-tac-toe,
 I would like to play as (x OR o).
 ```
 ```
-as a player,
+As a player,
 so that i can play a game of tic tic-tac-toe,
 i would like to play with another player,
 ```
 ```
-as a player ,
+As a player ,
 so that i can play a game of tic-tac-toe,
 i would like a board to play on.
 ```
 ```
-as a player,
+As a player,
 so that the game is fair,
 players must alternate turns.
 ```
 ```
-as a player
+As a player
 so that i can win or lose the game,
 the game should tell me when there is a winner with 3 in a row.
 ```
 ```
-as a player,
+As a player,
 so that i can have a draw,
 the game should end when there are no spaces left on the board and no winners.
 ```
