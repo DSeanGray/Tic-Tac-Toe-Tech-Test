@@ -36,7 +36,7 @@ describe Game do
       game.play(5)
       game.play(2)
       game.play(9)
-      expect(game.play(3)).to eq("Well done! You win!")
+      expect(game.play(3)).to eq("Well done! 'O's win!")
       expect(game.board).to eq(["O","O","O","_","X","_","_","_","X"])
     end
 
@@ -46,7 +46,7 @@ describe Game do
       game.play(9)
       game.play(2)
       game.play(4)
-      expect(game.play(3)).to eq("Well done! You win!")
+      expect(game.play(3)).to eq("Well done! 'X's win!")
       expect(game.board).to eq(["X","X","X","O","O","_","_","_","O"])
     end
 

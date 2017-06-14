@@ -29,7 +29,7 @@ class Game
     @possible_wins.each do |win|
       count = 0
       win.each { |square| count += 1 if @board[square] == "O"}
-      return "Well done! You win!" if count == 3
+      return "Well done! 'O's win!" if count == 3
     end
     check_X_wins
   end
@@ -38,7 +38,7 @@ class Game
     @possible_wins.each do |win|
       count = 0
       win.each { |square| count += 1 if @board[square] == "X"}
-      return "Well done! You win!" if count == 3
+      return "Well done! 'X's win!" if count == 3
     end
     check_draw
   end

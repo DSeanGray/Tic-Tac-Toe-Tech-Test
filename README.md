@@ -5,6 +5,7 @@ To download and play:
 Open your terminal window and `cd` to the directory of your choice and run the following commands.
 
 * `git clone git@github.com:DSeanGray/Tic-Tac-Toe-Tech-Test.git`
+* `bundle install`
 * `cd Tic-Tac-Toe-Tech-Test`
 * `irb`
 * `require "./lib/game.rb"`
@@ -18,7 +19,7 @@ To place your X or O simply choose the number corresponding to the grid below.
 
   1 | 2 | 3<br>
   4 | 5 | 6<br>
-  7 | 8 | 8
+  7 | 8 | 9
 
 To play in the terminal window type `game.play(`number`)`.
 
