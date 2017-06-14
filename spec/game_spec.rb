@@ -25,4 +25,10 @@ describe Game do
       expect(game.board).to eq(["O","X","_","_","_","_","_","_","_"])
     end
   end
+
+  describe "Game Logic" do
+    it "has 8 possible winning lines" do
+      expect(game.possible_wins).to eq([[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]])
+    end
+  end
 end
