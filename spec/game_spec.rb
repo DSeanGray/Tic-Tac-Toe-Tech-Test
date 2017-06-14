@@ -31,13 +31,23 @@ describe Game do
       expect(game.possible_wins).to eq([[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]])
     end
 
-    it "allows player 1 to win" do
+    it "allows player O to win" do
       game.play(1)
       game.play(5)
       game.play(2)
       game.play(9)
       expect(game.play(3)).to eq("Well done! You win!")
       expect(game.board).to eq(["O","O","O","_","X","_","_","_","X"])
+    end
+
+    it "allows player X to win" do
+      game.play(5)
+      game.play(1)
+      game.play(9)
+      game.play(2)
+      game.play(4)
+      expect(game.play(3)).to eq("Well done! You win!")
+      expect(game.board).to eq(["X","X","X","O","O","_","_","_","O"])
     end
   end
 end

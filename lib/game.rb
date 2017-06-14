@@ -12,7 +12,7 @@ class Game
     selection = choice - 1
     @player1 == true ? @board[selection] = "O" : @board[selection] = "X"
     change_player
-    check_O_won
+    check_O_wins
   end
 
   private
@@ -21,10 +21,19 @@ class Game
     @player1 = !@player1
   end
 
-  def check_O_won
+  def check_O_wins
     @possible_wins.each do |win|
       count = 0
       win.each { |square| count += 1 if @board[square] == "O"}
+      return "Well done! You win!" if count == 3
+    end
+    check_X_wins
+  end
+
+  def check_X_wins
+    @possible_wins.each do |win|
+      count = 0
+      win.each { |square| count += 1 if @board[square] == "X"}
       return "Well done! You win!" if count == 3
     end
   end
